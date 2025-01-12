@@ -5,4 +5,7 @@
     <string name="btn_login">Log in</string>
     <string name="title_dynamicfeature">versions</string>
     <string name="login">Login</string>
+    <string name="new_user">New user?</string>
+    <string name="signup">Sign Up</string>
+    <string name="existing_user">Already have an account</string>
 </resources>

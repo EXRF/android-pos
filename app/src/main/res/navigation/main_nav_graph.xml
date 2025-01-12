@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_fragmentOnboarding_to_fragmentLogin"
             app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_fragmentOnboarding_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
 
     </fragment>
 
@@ -28,6 +31,20 @@
         android:label="FragmentLogin"
         tools:layout="@layout/fragment_login">
 
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="com.android_pos.presentation.auth.signup.SignUpFragment"
+        android:label="FragmentSignUp"
+        tools:layout="@layout/fragment_signup">
+
+        <action
+            android:id="@+id/action_fragmentSignUp_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
     </fragment>
 
 </navigation>

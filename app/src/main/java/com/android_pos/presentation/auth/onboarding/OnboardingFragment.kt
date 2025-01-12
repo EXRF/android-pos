@@ -21,6 +21,10 @@ class OnboardingFragment : BaseFragment<FragmentOnboardingBinding>() {
         btnLogin.btn.setOnClickListener {
             findNavController().navigate(R.id.fragmentLogin)
         }
+
+        btnNewAccount.btn.setOnClickListener {
+            findNavController().navigate(R.id.fragmentSignUp)
+        }
     }
 
     override suspend fun FragmentOnboardingBinding.setupEvent() {

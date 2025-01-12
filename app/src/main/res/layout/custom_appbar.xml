@@ -14,9 +14,11 @@
             android:id="@+id/iv_back"
             android:layout_width="@dimen/dp30"
             android:layout_height="@dimen/dp30"
+            android:layout_marginStart="@dimen/dp5"
             app:srcCompat="@drawable/ic_back" />
 
         <TextView
+            android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/rubik500.s18.1A72DD"
