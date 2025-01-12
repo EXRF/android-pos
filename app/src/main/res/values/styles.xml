@@ -26,6 +26,14 @@
         <item name="android:textColor">@color/color_1D2433</item>
     </style>
 
+    <style name="rubik500.s18">
+        <item name="android:textSize">@dimen/dp18</item>
+    </style>
+
+    <style name="rubik500.s18.1A72DD">
+        <item name="android:textColor">@color/color_1A72DD</item>
+    </style>
+
     // rubik 900
     <style name="rubik900">
         <item name="fontFamily">@font/rubik_900</item>
