@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.android_pos"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.android_pos"
@@ -54,6 +54,7 @@ android {
 }
 
 dependencies {
+    api(project(":core"))
 
     val lifecycle_version = "2.6.1"
 

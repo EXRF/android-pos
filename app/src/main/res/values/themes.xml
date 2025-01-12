@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Android_pos" parent="android:Theme.Material.Light.NoActionBar" />
+<!--    <style name="Theme.Android_pos" parent="android:Theme.Material.Light.NoActionBar" />-->
+    <style name="Base.Theme.PosTerminalApp" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/color_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.PosAndroidApp" parent="Base.Theme.PosTerminalApp" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Diğer özellikler -->
+
+        <!-- Status bar rengi için -->
+        <item name="android:statusBarColor">@color/color_background</item>
+    </style>
+
+    <style name="Theme.SplashScreenTheme" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation duration. -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
+             animated drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen</item>
+        <!-- Required for animated icons -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/Base.Theme.PosTerminalApp</item>
+
+    </style>
 </resources>

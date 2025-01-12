@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // rubik 400
+    <style name="rubik400">
+        <item name="fontFamily">@font/rubik_400</item>
+    </style>
+
+    <style name="rubik400.s14">
+        <item name="android:textSize">@dimen/dp14</item>
+    </style>
+
+    <style name="rubik400.s14.1D2433">
+        <item name="android:textColor">@color/color_1D2433</item>
+    </style>
+    
+    // rubik 500
+    <style name="rubik500">
+        <item name="fontFamily">@font/rubik_500</item>
+    </style>
+    
+    <style name="rubik500.s16">
+        <item name="android:textSize">@dimen/dp16</item>
+    </style>
+
+    <style name="rubik500.s16.1D2433">
+        <item name="android:textColor">@color/color_1D2433</item>
+    </style>
+
+    // rubik 900
+    <style name="rubik900">
+        <item name="fontFamily">@font/rubik_900</item>
+    </style>
+
+    <style name="rubik900.s30">
+        <item name="android:textSize">@dimen/dp30</item>
+    </style>
+
+    <style name="rubik900.s30.background">
+        <item name="android:textColor">@color/color_background</item>
+    </style>
+
+    <style name="AppTheme.RoundedFillMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_fill_shape</item>
+        <item name="android:textSize">@dimen/dp12</item>
+    </style>
+
+    <style name="AppTheme.RoundedOutlinedMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_outlined_shape</item>
+        <item name="android:textSize">@dimen/dp12</item>
+    </style>
+</resources>

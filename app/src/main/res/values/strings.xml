@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android POS</string>
+    <string name="app_title">Easy Management for your Store</string>
+    <string name="btn_new_account">Create new account</string>
+    <string name="btn_login">Log in</string>
+    <string name="title_dynamicfeature">versions</string>
 </resources>
