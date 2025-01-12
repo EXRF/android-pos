@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import com.android_pos.base.BaseFragment
 import com.android_pos.databinding.FragmentLoginBinding
 import androidx.navigation.fragment.findNavController
+import com.android_pos.R
 
 class LoginFragment : BaseFragment<FragmentLoginBinding>() {
     override fun getViewBinding(
@@ -14,7 +15,7 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
 
 
     override fun FragmentLoginBinding.initBinding() {
-        btnLogin.tvTitle.text = "Login"
+        btnLogin.tvTitle.text = getString(R.string.login)
 
         tfUsername.tvTitle.text = "Username"
         tfUsername.etInput.hint = "Masukkan username"
@@ -24,6 +25,10 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
 
         appbar.ivBack.setOnClickListener {
             findNavController().popBackStack()
+        }
+
+        tvSignup.setOnClickListener {
+            findNavController().navigate(R.id.action_fragmentLogin_to_fragmentSignUp)
         }
     }
 
