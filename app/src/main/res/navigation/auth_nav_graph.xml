@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@+id/fragmentOnboarding">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.newposandroid.presentation.MainActivity"
+        tools:layout="@layout/activity_main"
+        android:label="MainActivity" />
+
+    <fragment
+        android:id="@+id/fragmentOnboarding"
+        android:name="com.newposandroid.presentation.auth.onboarding.OnboardingFragment"
+        android:label="FragmentOnboarding"
+        tools:layout="@layout/fragment_onboarding">
+
+        <action
+            android:id="@+id/action_fragmentOnboarding_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_fragmentOnboarding_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.newposandroid.presentation.auth.login.LoginFragment"
+        android:label="FragmentLogin"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSignUp"
+        android:name="com.newposandroid.presentation.auth.signup.SignUpFragment"
+        android:label="FragmentSignUp"
+        tools:layout="@layout/fragment_signup">
+
+        <action
+            android:id="@+id/action_fragmentSignUp_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+
+</navigation>

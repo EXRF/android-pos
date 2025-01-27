@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/custom_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/tf_username"
+        layout="@layout/custom_textfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp50"
+        app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+    <include
+        android:id="@+id/tf_password"
+        layout="@layout/custom_textfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        app:layout_constraintTop_toBottomOf="@+id/tf_username" />
+
+    <include
+        android:id="@+id/btn_login"
+        layout="@layout/custom_button_fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp80"
+        app:layout_constraintTop_toBottomOf="@id/tf_password" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            style="@style/rubik400.s14.1D2433"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="@string/new_user" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            style="@style/rubik500.s14.1A72DD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

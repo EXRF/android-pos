@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_on_primary">#FF000000</color>
+    <color name="color_on_secondary">#151515</color>
+    <color name="color_background">#F6F6F6</color>
+
+    <color name="red">#E91309</color>
+    <color name="light_red">#FFEBEA</color>
+    <color name="black_text">#1D2433</color>
+    <color name="light_grey">#E0E0E0</color>
+    <color name="red_100">#FFDFDF</color>
+    <color name="red_dangerous">#FD5A5A</color>
+    <color name="color_FFE9DC">#FFE9DC</color>
+    <color name="color_D95911">#D95911</color>
+
+    <color name="color_E2D7D766">#66E2D7D7</color>
+
+    <color name="color_000000">#000000</color>
+
+    <color name="color_E0E0E0">#E0E0E0</color>
+    <color name="color_1D2433">#1D2433</color>
+    <color name="color_D3160D">#D3160D</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_FFE0E0">#FFE0E0</color>
+    <color name="color_6F0C80">#6F0C80</color>
+    <color name="color_FFEBEA">#FFEBEA</color>
+    <color name="color_FFF4F3">#FFF4F3</color>
+    <color name="color_EDEDED">#EDEDED</color>
+    <color name="color_E91309">#E91309</color>
+    <color name="color_FFCDCA">#FFCDCA</color>
+    <color name="color_F5F5F5">#F5F5F5</color>
+    <color name="color_F9F9F9">#F9F9F9</color>
+    <color name="color_9E9E9E">#9E9E9E</color>
+    <color name="color_1E1E1E">#1E1E1E</color>
+    <color name="color_9D1009">#9D1009</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_font_grey">#757575</color>
+    <color name="color_252525">#252525</color>
+    <color name="color_A61D2433">#A61D2433</color>
+    <color name="color_CC656A73">#CC656A73</color>
+    <color name="color_0C803A">#0C803A</color>
+    <color name="color_C0F3D4">#C0F3D4</color>
+    <color name="color_FFFBFA">#FFFBFA</color>
+    <color name="color_1D2433CC">#1D2433CC</color>
+    <color name="color_F8F8F8">#F8F8F8</color>
+    <color name="color_black_1D2433">#1D2433</color>
+    <color name="color_25D366">#25D366</color>
+    <color name="color_FFE6BF">#FFE6BF</color>
+    <color name="color_AF6C06">#AF6C06</color>
+    <color name="color_EBFFDC">#EBFFDC</color>
+    <color name="color_39D911">#39D911</color>
+    <color name="color_00B2FF">#00B2FF</color>
+    <color name="color_EAFDFF">#EAFDFF</color>
+    <color name="color_FF0000">#FF0000</color>
+    <color name="color_FFF5DA">#FFF5DA</color>
+    <color name="color_BE8E0C">#BE8E0C</color>
+
+    <color name="color_grey_E0E0E0">#E0E0E0</color>
+    <color name="color_grey_757575">#757575</color>
+    <color name="color_F6F4F4">#F6F4F4</color>
+    <color name="color_888888">#888888</color>
+
+    <color name="color_FF746E">#FF746E</color>
+    <color name="color_08875D">#08875D</color>
+    <color name="color_0f7dd1">#0f7dd1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="color_1A72DD">#1A72DD</color>
+    <color name="color_DCEAFF">#DCEAFF</color>
+    <color name="color_1556B9">#1556B9</color>
+    <color name="color_FCDAFF">#FCDAFF</color>
+    <color name="color_AC01BB">#AC01BB</color>
+    <color name="color_FFCDCD">#FFCDCD</color>
+    <color name="color_E9C0F3">#E9C0F3</color>
+    <color name="color_C50900">#C50900</color>
+    <color name="color_EDFDF8">#EDFDF8</color>
+    <color name="color_C2C2C2">#C2C2C2</color>
+    <color name="color_FFFBDC">#FFFBDC</color>
+    <color name="color_958402">#958402</color>
+    <color name="color_868686">#868686</color>
+    <color name="color_D3E7FF">#D3E7FF</color>
+    <color name="color_004394">#004394</color>
+
+    <color name="colorAccent">#1e88e5</color>
+    <color name="colorAccentDark">#005cb2</color>
+    <color name="colorAccentLight">#6ab7ff</color>
+    <color name="colorOnPrimary">@color/white</color>
+    <color name="colorRipple">@color/white_2</color>
+
+    <color name="white_2">#33FFFFFF</color>
+    <color name="ripple_color">#66CCCCCC</color>
+    <color name="light_gray">#CCCCCC</color>
+
+    // bottom navigation
+    <color name="home">#5B37B7</color>
+    <color name="like">#C9379D</color>
+    <color name="search">#E6A919</color>
+    <color name="profile">#1194AA</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_outlined_shape"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/dp16">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/rubik500.s14.1A72DD"
+        android:text="@string/btn_login"
+        android:textColor="@color/color_1A72DD"/>
+
+</LinearLayout>

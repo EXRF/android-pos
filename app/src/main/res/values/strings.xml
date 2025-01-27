@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">New POS Android</string>
+    <string name="loading">Loading ...</string>
+    <string name="app_title">Easy Management for your Store</string>
+    <string name="btn_new_account">Create new account</string>
+    <string name="btn_login">Log in</string>
+    <string name="title_dynamicfeature">versions</string>
+    <string name="login">Login</string>
+    <string name="new_user">New user?</string>
+    <string name="signup">Sign Up</string>
+    <string name="existing_user">Already have an account</string>
+    <string name="welcome">Welcome</string>
+    <string name="find_products">Find Products...</string>
+    <string name="product">Product</string>
+    <string name="circle_icon">Circle Icon</string>
+    <string name="manual_input">Manual Input</string>
+    <string name="amount">Amount</string>
+    <string name="log_out">Log out</string>
+    <string name="select_file">Select file</string>
+    <string name="create_new_account">Create new account</string>
+</resources>
