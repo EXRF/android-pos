@@ -1,22 +1,12 @@
 package com.newposandroid.presentation.main.home
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.viewModelScope
 import com.newposandroid.base.BaseViewModel
 import com.newposandroid.domain.model.Product
 import com.newposandroid.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ObsoleteCoroutinesApi
-import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.receiveAsFlow
-import kotlinx.coroutines.plus
 import javax.inject.Inject
 import kotlin.coroutines.CoroutineContext
 
@@ -63,5 +53,6 @@ class HomeViewModel @Inject constructor(
     fun addProduct(products: MutableList<Product>?) {
         _listProduct.value?.data?.addAll(products ?: mutableListOf())
         _listProduct.value = Resource.Success(_listProduct.value?.data ?: mutableListOf())
+        showToast("Product has added")
     }
 }
