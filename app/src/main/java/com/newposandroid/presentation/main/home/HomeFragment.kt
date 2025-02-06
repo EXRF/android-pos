@@ -78,9 +78,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
                 else -> {}
             }
         }
-        viewModel.toastEvent.observe(viewLifecycleOwner) {
-            toast(requireContext(), it, true)
-        }
     }
 }
 

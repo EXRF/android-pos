@@ -13,23 +13,5 @@ abstract class BaseViewModel(
 ): ViewModel()  {
     protected val adaptiveScope: CoroutineScope
         get() = viewModelScope + coroutineContext
-
-    // SingleLiveEvents for common UI interactions
-    val navigationEvent = SingleLiveEvent<String>()
-    val toastEvent = SingleLiveEvent<String>()
-    val otherEvent = SingleLiveEvent<Any>() // Add other events as needed
-
-    // Helper methods for triggering events
-    fun navigate(destination: String) {
-        navigationEvent.call(destination)
-    }
-
-    fun showToast(message: String) {
-        toastEvent.call(message)
-    }
-
-    fun triggerOtherEvent(data: Any) {
-        otherEvent.call(data)
-    }
 }
 

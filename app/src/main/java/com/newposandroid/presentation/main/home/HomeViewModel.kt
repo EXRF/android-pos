@@ -53,6 +53,5 @@ class HomeViewModel @Inject constructor(
     fun addProduct(products: MutableList<Product>?) {
         _listProduct.value?.data?.addAll(products ?: mutableListOf())
         _listProduct.value = Resource.Success(_listProduct.value?.data ?: mutableListOf())
-        showToast("Product has added")
     }
 }
