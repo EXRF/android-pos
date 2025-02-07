@@ -13,7 +13,11 @@ class SignUpFragment : BaseFragment<FragmentSignupBinding>() {
         container: ViewGroup?
     ): FragmentSignupBinding = FragmentSignupBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentSignupBinding.observer() {
+    override suspend fun FragmentSignupBinding.setupEvent() {
+    }
+
+    override suspend fun FragmentSignupBinding.setupState() {
+
 
     }
 

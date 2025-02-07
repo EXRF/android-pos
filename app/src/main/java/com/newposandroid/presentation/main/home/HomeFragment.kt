@@ -1,11 +1,13 @@
 package com.newposandroid.presentation.main.home
 
 import android.graphics.Rect
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,7 +18,11 @@ import com.newposandroid.utils.BouncyEdgeEffectFactory
 import com.newposandroid.utils.Resource
 import com.newposandroid.utils.toast
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ObsoleteCoroutinesApi
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 
+@ObsoleteCoroutinesApi
 @AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private val productHorizontalAdapter by lazy { ProductHorizontalAdapter() }
@@ -32,6 +38,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override fun FragmentHomeBinding.initBinding() {
         viewModel = ViewModelProvider(requireActivity())[HomeViewModel::class.java]
         renderContent()
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.init()
+        }
     }
 
     private fun FragmentHomeBinding.renderContent() {
@@ -66,18 +75,22 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         }
     }
 
-    override suspend fun FragmentHomeBinding.observer() {
-        viewModel.listProduct.observe(viewLifecycleOwner) {
+    override suspend fun FragmentHomeBinding.setupState() {
+        viewModel.state.collect {
             when (it) {
-                is Resource.Success -> {
-                    it.data?.let { products ->
-                        productHorizontalAdapter.setItems(products)
-                        productGridAdapter.setItems(products)
-                    }
+                is HomeState.Loading -> {}
+                is HomeState.Success -> {
+                    productHorizontalAdapter.setItems(it.products)
+                    productGridAdapter.setItems(it.products)
                 }
+
                 else -> {}
             }
         }
+    }
+
+    override suspend fun FragmentHomeBinding.setupEvent() {
+
     }
 }
 

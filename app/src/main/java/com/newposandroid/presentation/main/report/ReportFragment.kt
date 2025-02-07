@@ -40,9 +40,14 @@ class ReportFragment : BaseFragment<FragmentReportBinding>() {
         container: ViewGroup?
     ): FragmentReportBinding = FragmentReportBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentReportBinding.observer() {
+    override suspend fun FragmentReportBinding.setupEvent() {
+    }
+
+    override suspend fun FragmentReportBinding.setupState() {
+
 
     }
+
 
     override fun FragmentReportBinding.initBinding() {
         renderContent()

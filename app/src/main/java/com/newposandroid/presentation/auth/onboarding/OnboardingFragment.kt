@@ -13,7 +13,10 @@ class OnboardingFragment : BaseFragment<FragmentOnboardingBinding>() {
         container: ViewGroup?
     ): FragmentOnboardingBinding = FragmentOnboardingBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentOnboardingBinding.observer() {
+    override suspend fun FragmentOnboardingBinding.setupEvent() {
+    }
+
+    override suspend fun FragmentOnboardingBinding.setupState() {
 
     }
 

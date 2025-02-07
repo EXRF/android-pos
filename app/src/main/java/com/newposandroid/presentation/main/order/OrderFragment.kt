@@ -17,9 +17,14 @@ class OrderFragment : BaseFragment<FragmentOrderBinding>() {
         container: ViewGroup?
     ): FragmentOrderBinding = FragmentOrderBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentOrderBinding.observer() {
+    override suspend fun FragmentOrderBinding.setupEvent() {
+    }
+
+    override suspend fun FragmentOrderBinding.setupState() {
+
 
     }
+
 
     override fun FragmentOrderBinding.initBinding() {
         renderContent()

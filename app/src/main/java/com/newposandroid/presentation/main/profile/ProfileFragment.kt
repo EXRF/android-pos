@@ -14,9 +14,14 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>() {
         container: ViewGroup?
     ): FragmentProfileBinding = FragmentProfileBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentProfileBinding.observer() {
+    override suspend fun FragmentProfileBinding.setupEvent() {
+    }
+
+    override suspend fun FragmentProfileBinding.setupState() {
+
 
     }
+
 
     override fun FragmentProfileBinding.initBinding() {
         renderContent()

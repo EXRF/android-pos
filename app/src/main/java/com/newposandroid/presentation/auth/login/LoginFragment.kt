@@ -15,7 +15,10 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>() {
         container: ViewGroup?
     ): FragmentLoginBinding = FragmentLoginBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentLoginBinding.observer() {
+    override suspend fun FragmentLoginBinding.setupEvent() {
+    }
+
+    override suspend fun FragmentLoginBinding.setupState() {
 
     }
 

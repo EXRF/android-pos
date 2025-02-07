@@ -14,8 +14,10 @@ class FormProductFragment : BaseFragment<FragmentFormProductBinding>() {
         container: ViewGroup?
     ): FragmentFormProductBinding = FragmentFormProductBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentFormProductBinding.observer() {
+    override suspend fun FragmentFormProductBinding.setupEvent() {
+    }
 
+    override suspend fun FragmentFormProductBinding.setupState() {
     }
 
     override fun FragmentFormProductBinding.initBinding() {

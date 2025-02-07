@@ -11,9 +11,14 @@ class PhotoProductFragment : BaseFragment<FragmentPhotoProductBinding>() {
         container: ViewGroup?
     ): FragmentPhotoProductBinding = FragmentPhotoProductBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentPhotoProductBinding.observer() {
+    override suspend fun FragmentPhotoProductBinding.setupEvent() {
+    }
+
+    override suspend fun FragmentPhotoProductBinding.setupState() {
+
 
     }
+
 
     override fun FragmentPhotoProductBinding.initBinding() {
         renderContent()

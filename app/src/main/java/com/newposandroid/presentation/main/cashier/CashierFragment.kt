@@ -11,7 +11,11 @@ class CashierFragment : BaseFragment<FragmentCashierBinding>() {
         container: ViewGroup?
     ): FragmentCashierBinding = FragmentCashierBinding.inflate(inflater, container, false)
 
-    override suspend fun FragmentCashierBinding.observer() {
+    override suspend fun FragmentCashierBinding.setupEvent() {
+    }
+
+    override suspend fun FragmentCashierBinding.setupState() {
+
 
     }
 

@@ -18,7 +18,9 @@ import com.newposandroid.presentation.main.order.OrderFragment
 import com.newposandroid.presentation.main.profile.ProfileFragment
 import com.newposandroid.presentation.main.report.ReportFragment
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ObsoleteCoroutinesApi
 
+@ObsoleteCoroutinesApi
 @AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
     private val binding by lazy { ActivityHomeBinding.inflate(layoutInflater) }
